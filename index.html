@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InDesicards</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1674f5b21d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main class="home">
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        data-bs-theme="dark"
+        style="background-color: #080909"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex justify-content-center" href="#">
+            <img
+              src="/ASSETS/indesicards_logo.png"
+              alt="InDesiCards"
+              class="d-inline-block align-text-top"
+            />
+            <h1>InDesiCards</h1>
+          </a>
+          <button
+            class="navbar-toggler toggle-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item"></li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#cards">Cards</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#inventors">Inventors</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutUs">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact us</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger"
+              type="button
+            "
+            >
+              Play Game
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section class="row home-image-container">
+        <div class="left-home-image-container col-md-7">
+          <img src="/ASSETS/home_image.jpg" alt="home_background" />
+        </div>
+        <div class="right-home-image-container col-md-5 d-flex flex-column">
+          <h1>A Desi card games - <span>Indian monuments</span></h1>
+          <p>
+            The primary motive of this game to spread knowledge of Indian
+            monuments to all age group people.
+          </p>
+          <div class="home-button-container d-flex">
+            <button class="btn btn-danger" type="submit">
+              Join the battle <i class="fa-brands fa-battle-net fa-spin"></i>
+            </button>
+            <button class="btn btn-light" type="submit">Learn</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="row methodology-container mx-0 text-align-center">
+      <h1>Methodology</h1>
+      <div class="left-methodology-container col-md-6">
+        <ul>
+          <li>Framing of game structure includes overall layout of game.</li>
+          <li>
+            Framing of card involves the determining of factors, structure and
+            components in the card.
+          </li>
+          <li>
+            In Layout design the design language of the card for suitable theme
+            is chosen.
+          </li>
+          <li>
+            Primary product is prototyped and circulated among various age
+            groups and assessed.
+          </li>
+          <li>
+            Finally, the product is optimized based on feedback and is mass
+            produced.
+          </li>
+        </ul>
+      </div>
+      <div class="right-methodology-container col-md-6 px-0">
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Framing of Game Structure
+        </button>
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Framing of Game Card
+        </button>
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Layout Design
+        </button>
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Prototyping
+        </button>
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Optimisation of Product
+        </button>
+        <i class="fa-solid fa-arrow-down-long"></i>
+        <button class="btn btn-danger btn-outline-light" type="submit">
+          Production
+        </button>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <section>
+        <div class="container reveal fade-bottom">
+          <h2>How to Play?</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <h3>Step 1</h3>
+              <p>Distribute al the cards evenly to all the players.</p>
+            </div>
+            <div class="text-box">
+              <h3>Step 2</h3>
+              <p>
+                Each player has to hold the deck of their cards upside down.
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>Step 3</h3>
+              <p>
+                All players have to flip the uppermost card and play with it.
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>Step 4</h3>
+              <p>
+                One player raises a cértain factor in his/her card and all the
+                players has to play with that factor in that round. The player
+                with the significant number* wins the cards of other players.<br />
+                For example: Player 1 has Brihadeshwara temple card and he
+                claims the age of it and player 2 and player 3 has cards with
+                age less that of brihadeshwara temple, they have to give their
+                cards to player.
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>Step 5</h3>
+              <p>
+                The player who won the previous round, gets the opportunity to
+                start the next round.
+              </p>
+            </div>
+            <div class="text-box">
+              <h3>Step 6</h3>
+              <p>The player with all the cards wins the game.</p>
+            </div>
+          </div>
+          <ul class="exception-box">
+            <h1>Exceptions</h1>
+            <li>
+              When the layer i left with only thee cards, he can flip all his
+              cards facing him and continue to play with any of these cards unti
+              he gets more than three cards.
+            </li>
+            <li>
+              When the factor between all the players gets dashed, the players
+              have to place the cards in the centre and the one who wins with
+              his upcoming card gets all the cards placed under clash.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container reveal fade-left">
+          <h2>Layout of Card</h2>
+          <div class="row">
+            <div class="left-layout-container col-md-6">
+              <p>
+                The layout of the desi card is based on simple layout and the
+                following factors were considered in deciding the layout:
+              </p>
+              <ul>
+                <li>Size of the card - Bridge size card (57mm x 88.8mm)</li>
+                <li>Composition of the card</li>
+                <li>Font style - Kritsen ITC and Mistral</li>
+                <li>Colour composition - Gold and Black colour palette</li>
+                <li>Card Type - Coreless</li>
+                <li>Card Box type</li>
+              </ul>
+            </div>
+            <div class="right-layout-container col-md-6">
+              <img src="/ASSETS/card_layout.png" alt="Card Layout" />
+            </div>
+          </div>
+
+          <div class="row initial-card-container">
+            <h4>Initial Stage</h4>
+            <div class="left-layout-container initial-card col-md-6">
+              <img src="/ASSETS/stage1_front_card.png" alt="Front Card" />
+            </div>
+            <div class="right-layout-container initial-card col-md-6">
+              <img src="/ASSETS/stage1_back_card.png" alt="Back Card" />
+            </div>
+          </div>
+
+          <div class="row final-card-container">
+            <h4>Final Stage</h4>
+            <div class="left-layout-container final-card col-md-6">
+              <img src="/ASSETS/final_front_card.png" alt="Front Card" />
+            </div>
+            <div class="right-layout-container final-card col-md-6">
+              <img src="/ASSETS/final_back_card.png" alt="Back Card" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container reveal fade-right">
+          <h2>Prototyping</h2>
+          <div class="inventors-card-container">
+            <div class="prototype-card">
+              <img src="/ASSETS/prototype1.png" alt="Prototype" />
+            </div>
+            <div class="prototype-card">
+              <img src="/ASSETS/prototype2.png" alt="Prototype" />
+            </div>
+            <div class="prototype-card">
+              <img src="/ASSETS/prototype3.png" alt="Prototype" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-container">
+        <section>
+          <div class="container reveal fade-bottom">
+            <h2>Design Details</h2>
+            <div class="design-details-image">
+              <img src="/ASSETS/design_details.jpg" alt="design details" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <div id="cards" class="container reveal fade-left">
+          <h2>Cards</h2>
+          <div
+            id="carouselExampleControls"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-space-around"
+                >
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card1.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card2.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card3.png" alt="card" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card4.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card5.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card6.png" alt="card" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card-wrapper container-sm d-flex justify-content-around"
+                >
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card7.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card8.png" alt="card" />
+                  </div>
+                  <div class="card" style="width: 18rem; margin-right: 5%">
+                    <img src="/ASSETS/card9.png" alt="card" />
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inventors">
+        <div class="container reveal fade-right">
+          <h2>Inventors</h2>
+          <div class="inventors-card-container">
+            <div class="inventors-card">
+              <h4>Dr.G.S.Rampradheep</h4>
+              <h5>Associate Professor</h5>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Dr.N.Shanthi</h4>
+              <h5>Professor & Head</h5>
+              <h6>BE - Computer Science and Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Dr.P.S.Kothai</h4>
+              <h5>Professor & Head</h5>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Dr.S.Anandakumar</h4>
+              <h5>Professor</h5>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Dr.D.Ambika</h4>
+              <h5>Associate Professor</h5>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Shimar Ahamed</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Kavin</h4>
+              <h6>BE - Computer Science and Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Vignesh Kumar</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Vinish Nandhan</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Vignesh Bharati</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Syed Shanavaz</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+            <div class="inventors-card">
+              <h4>Sri Balaji</h4>
+              <h6>BE - Civil Engineering</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutUs" class="section-container">
+        <section>
+          <div class="container reveal fade-bottom">
+            <h2>About us</h2>
+            <ul class="about-us-container">
+              <li>
+                Desi card game is a card game which is completely based on the
+                Indian monuments.
+              </li>
+              <li>
+                The term 'Desi' which means 'local/indigenous' is selected as
+                the title of the game.
+              </li>
+              <li>India + Desi = inDesi.</li>
+              <li>
+                Primary motive: Spread knowledge of Indian monuments to all age
+                group people.
+              </li>
+            </ul>
+            <div id="viewAll" class="about-us-details">
+              <div id="statement" class="statement-container">
+                <h1>Statement</h1>
+                <ul>
+                  <li>
+                    Existing games: Focused on cricket, wrestling, number and
+                    merely fun.
+                  </li>
+                  <li>
+                    Lack of knowledge and awareness about Indian monuments
+                    among, not only students, but Indians in majority.
+                  </li>
+                  <li>
+                    Need of a different route in the approach of learning.
+                  </li>
+                </ul>
+              </div>
+              <div id="solution" class="statement-container">
+                <h1>Solution</h1>
+                <ul>
+                  <li>
+                    Simple yet innovative gameplay with source of buildings.
+                  </li>
+                  <li>
+                    InDesi cards, with pictorial representation of buildings
+                    help people memorise easily.
+                  </li>
+                  <li>This card takes an unique route in way of learning.</li>
+                </ul>
+              </div>
+              <div id="uniqueness" class="statement-container">
+                <h1>Uniqueness</h1>
+                <ul>
+                  <li>Only card game based on Indian monuments.</li>
+                  <li>Education through games.</li>
+                  <li>
+                    A versatile product for various purposes such as
+                    entertainment, education, competitive exams, etc
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="viewAllButton" class="view-all-button" onclick="openAll()">
+              View all <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section id="contactUs" class="contact-us-container">
+      <div class="contact-detail-container">
+        <a
+          class="navbar-brand contact-navbar-brand d-flex justify-content-center"
+          href="#"
+        >
+          <img
+            src="/ASSETS/indesicards_logo.png"
+            alt="InDesiCards"
+            class="d-inline-block align-text-top"
+          />
+          <h1>InDesiCards</h1>
+        </a>
+        <div class="details">
+          A Desi card games - Indian monuments <br />The primary motive of this
+          game to spread knowledge of Indian monuments to all age group people.
+        </div>
+        <div class="social-media-container">
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-details-container">
+        <h4>Dr.G.S.Rampradheep</h4>
+        <h5>Associate Professor</h5>
+        <h6>BE - Civil Engineering</h6>
+        <h2>
+          <i class="fa-solid fa-envelope"></i> :
+          <span>rampradheep.civil@kongu.edu</span>
+        </h2>
+        <h2><i class="fa-solid fa-phone"></i> : <span>+91 9750033500</span></h2>
+      </div>
+      <div class="contact-navbar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#cards">Cards</a>
+          </li>
+          <li>
+            <a href="#inventors">Inventors</a>
+          </li>
+          <li>
+            <a href="#aboutUs">About us</a>
+          </li>
+          <li>
+            <a href="#contactUs">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-form-container">
+        <h3>Contact us</h3>
+        <form>
+          <div class="input-fields">
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="input-fields">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="input-fields">
+            <textarea type="text" placeholder="Enter your comment"></textarea>
+          </div>
+          <button class="btn btn-danger" type="submit">
+            Send <i class="fa-solid fa-paper-plane fa-bounce"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy; 2023 by team cholas copyrighted.</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="/JS/index.js"></script>
+</html>
