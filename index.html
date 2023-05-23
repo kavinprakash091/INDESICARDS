@@ -17,6 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
     <script
       src="https://kit.fontawesome.com/1674f5b21d.js"
       crossorigin="anonymous"
@@ -287,83 +295,35 @@
       </section>
 
       <section>
-        <div id="cards" class="container reveal fade-left">
+        <div class="wrapper" id="cards">
           <h2>Cards</h2>
-          <div
-            id="carouselExampleControls"
-            class="carousel carousel-dark slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div
-                  class="card-wrapper container-sm d-flex justify-content-space-around"
-                >
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card1.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card2.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card3.png" alt="card" />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div
-                  class="card-wrapper container-sm d-flex justify-content-around"
-                >
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card4.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card5.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card6.png" alt="card" />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div
-                  class="card-wrapper container-sm d-flex justify-content-around"
-                >
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card7.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card8.png" alt="card" />
-                  </div>
-                  <div class="card" style="width: 18rem; margin-right: 5%">
-                    <img src="/ASSETS/card9.png" alt="card" />
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+          <div class="carousel owl-carousel">
+            <div class="card">
+              <img src="/ASSETS/card1.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card2.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card3.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card4.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card5.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card6.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card7.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card8.png" alt="card" />
+            </div>
+            <div class="card">
+              <img src="/ASSETS/card9.png" alt="card" />
             </div>
           </div>
         </div>
@@ -425,6 +385,21 @@
             <div class="inventors-card">
               <h4>Sri Balaji</h4>
               <h6>BE - Civil Engineering</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container reveal fade-left">
+          <h2>Achievements</h2>
+          <div class="row">
+            <div class="right-layout-container col-md-6">
+              <img src="/ASSETS/certificates.png" alt="Card Layout" />
+            </div>
+
+            <div class="right-layout-container col-md-6">
+              <img src="/ASSETS/news.jpeg" alt="Card Layout" />
             </div>
           </div>
         </div>
@@ -586,4 +561,27 @@
     ></script>
   </body>
   <script src="/JS/index.js"></script>
+  <script>
+    $('.carousel').owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: false,
+        },
+      },
+    });
+  </script>
 </html>

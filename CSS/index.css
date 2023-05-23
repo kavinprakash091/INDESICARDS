@@ -498,6 +498,41 @@
   cursor: pointer;
 }
 
+.wrapper {
+  width: 100%;
+  margin-top: 5%;
+  /* margin-bottom: -20%; */
+}
+
+.wrapper h2 {
+  margin-top: 15%;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.carousel .card {
+  cursor: pointer;
+  width: 150%;
+  background: transparent;
+}
+
+.carousel .card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  width: 30%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
 .contact-us-container {
   width: 100%;
   background-color: #000000;
@@ -634,6 +669,10 @@ footer {
   background-color: #080909;
 }
 
+.section-container section:nth-child(5) {
+  margin-top: -15%;
+}
+
 @media screen and (max-width: 450px) {
   .home {
     width: 113%;
@@ -730,10 +769,10 @@ footer {
     height: 30vh;
   }
   .section-container section:nth-child(5) {
-    margin-top: -125%;
+    margin-top: -75%;
   }
   #inventors {
-    margin-top: -70%;
+    margin-top: -50%;
   }
   .inventors-card {
     width: 90%;
