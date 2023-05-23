@@ -669,8 +669,19 @@ footer {
   background-color: #080909;
 }
 
-.section-container section:nth-child(5) {
-  margin-top: -15%;
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel {
+  margin-top: -10%;
+}
+
+.carousel-item > img {
+  height: 100vh;
 }
 
 @media screen and (max-width: 450px) {
@@ -769,10 +780,17 @@ footer {
     height: 30vh;
   }
   .section-container section:nth-child(5) {
-    margin-top: -75%;
+    margin-top: -60%;
+    width: 113%;
+  }
+  .carousel {
+    margin-top: -10%;
+  }
+  .carousel-item > img {
+    height: 50vh;
   }
   #inventors {
-    margin-top: -50%;
+    margin-top: -80%;
   }
   .inventors-card {
     width: 90%;
